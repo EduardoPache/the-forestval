@@ -1,0 +1,43 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="Description" CONTENT="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price:  £9.24, Length: 784 pages">
+    <meta name="google-site-verification" content=""/>
+
+    <meta name="robots" content="noindex,nofollow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static 'bootstrap5/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <title>JD Arenal Tours</title>
+</head>
+<body>
+    {% include 'frontend/navbar.html' %}
+	<div>
+		{% block content %}
+
+
+
+		{% endblock %}
+	</div>
+
+	<footer>
+		{% include 'frontend/footer.html' %}
+	</footer>
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script src="{% static 'bootstrap5/js/bootstrap.js' %}"></script>
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+</body>
+</html>
