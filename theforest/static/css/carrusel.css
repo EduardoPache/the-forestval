@@ -1,0 +1,91 @@
+@media (max-width: 450px) {
+  .contenedor {
+    display: flex;
+
+    align-items: center;
+    z-index: 1;
+    position: relative;
+  }
+  .images {
+    width: 300px;
+    height: 200px;
+  }
+  .atras {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+
+    text-align: center;
+
+    position: relative;
+    color: #fff;
+  }
+  .adelante {
+    font-size: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+  }
+  .atras:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+  }
+  .adelante:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@media (min-width: 1000px) {
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+  }
+  .images {
+    width: 1400px;
+    height: 620px;
+  }
+  .atras {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+
+    text-align: center;
+
+    position: relative;
+    color: #fff;
+  }
+  .adelante {
+    font-size: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+  }
+  .atras:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+  }
+  .adelante:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+  }
+}

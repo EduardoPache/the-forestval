@@ -1,9 +1,91 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+<!--Seccion1-->
 <div class="container-fluid">
-    <h1>funciona</h1>
+    <div class="container-logo"><img class="logo" src="{%static 'images/L1.png'%}" alt=""></div>
 </div>
+<section>
 
+    <!--
+        Carrusel
+    -->
+    <div class="contenedor">
+        <div class="atras botones">
+            <img class="atrasIcon" src="{%static 'images/atras.svg'%}" alt="Boton Atras">>
+        </div>
+        <img src="{%static 'images/1.jpg'%}" alt="Slide" id="imagen" class="images">
+        <div class="adelante botones">
+            <img class="adelanteIcon" src="{%static 'images/adelante.svg'%}" alt="Boton Adelante">
+        </div>
+      
+
+
+        <!--
+        Carrusel
+    -->
+</section>
+
+</div>
+<!--Seccion1-->
+
+<!--Seccion2-->
+<p>The Villages</p>
+<div class="card-container">
+
+    <section class="card">
+        <div>
+            <img class="bkimg" src="{%static 'images/villa1.jpg'%}" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quos, delectus aspernatur, officiis qui tempora, ab officia a veritatis harum magni dolorum consectetur
+                temporibus error!
+                Quos vero quasi aut eaque sit.</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <div>
+            <img class="bkimg" src="{%static 'images/villa2.jpg'%}" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quos, delectus aspernatur, officiis qui tempora, ab officia a veritatis harum magni dolorum consectetur
+                temporibus error!
+                Quos vero quasi aut eaque sit.</p>
+        </div>
+    </section>
+
+
+</div>
+<!--Seccion2-->
+<p>Reserva</p>
+<div class="dFon">
+   
+    <img src="{%static 'images/L2.png'%}" alt="" class="formLogo">
+    <form class="bk" id="form">
+
+        <label>DATOS PERSONALES</label><br>
+        <label for="name">NOMBRE</label><br>
+        <input class="inputs" id="name" type="text"><br>
+        <label for="lName">Apellido</label><br>
+        <input class="inputs" id="lName" type="text"><br>
+        <label for="phone">Telefono</label><br>
+        <input class="inputs" type="tel" id="phone" name="phone"><br>
+        <label for="date">FECHA</label><br>
+        <input class="inputs" type="date" id="date" name="date"><br>
+        <label for="aPax">NUMERO DE PERSONAS</label><br>
+        <select class="inputs"  title="aPax" id="aPax">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br>
+        <button type="submit" class="reservaBtn">Reservar</button>
+    </form>
+
+</div>
 {% endblock %}

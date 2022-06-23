@@ -1,0 +1,22 @@
+@media(max-width : 450px){
+  .container-logo {
+    text-align: center;
+  }
+  .logo {
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+}
+
+@media(min-width : 1000px){
+.container-logo {
+  text-align: center;
+}
+.logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+}
